@@ -48,6 +48,7 @@ Router.route('/:id').get((req, res) => {
 
 //ADD ONE TODO
 Router.route('/add').post((req, res) => {
+	console.log(req.body);
 	let todo = new Todo(req.body);
 	todo
 		.save()
